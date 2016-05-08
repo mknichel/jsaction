@@ -1,0 +1,22 @@
+{
+  "name": "jsaction",
+  "version": "1.0.0",
+  "description": "A fork of google/jsaction that builds the contract and dispatcher binaries for easy use in applications.",
+  "dependencies": {
+    "google-closure-compiler": "^20160315.2.0",
+    "google-closure-library": "^20160315.0.0",
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknichel/jsaction.git"
+  },
+  "author": "mknichel@users.noreply.github.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mknichel/jsaction/issues"
+  },
+  "homepage": "https://github.com/mknichel/jsaction#readme"
+}

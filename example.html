@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body data-jsaction-events="click">
+  <!-- This captures and queues events before the dispatcher is loaded. -->
+  <script src="dist/contract.min.js"></script>
+
+  <!-- On any click within this element, this will invoke example.sayHello -->
+  <div jsaction="click:example.sayHello">Hello <span>World</span></div>
+
+  <!-- The dispatcher dispatches queued events to the right place. -->
+  <script src="dist/dispatcher.min.js"></script>
+  <!-- Register a handler for the sayHello action -->
+  <script>
+    jsaction.register('example.sayHello', function(e) {
+      console.log('Hello! Handling event: ' + e);
+    });
+  </script>
+</body>
+</html>
